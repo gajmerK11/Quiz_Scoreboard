@@ -1,4 +1,4 @@
-/* styles.css */
+/* General Body Styling */
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -11,9 +11,8 @@ body {
     to right,
     #1e3c72,
     #2a5298
-  ); /* Modern blue gradient background */
+  ); /* Blue Gradient Background */
   color: #333;
-  overflow: hidden;
 }
 
 .container {
@@ -25,31 +24,30 @@ body {
 }
 
 h1 {
-  margin: 20px 0;
+  margin: 10px 0;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
 }
 
+/* Scoreboard Grid */
 .scoreboard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   width: 100%;
-  height: 85%;
+  height: 90%;
   padding: 20px;
   box-sizing: border-box;
 }
 
+/* Team Card Styling */
 .team-card {
-  background: linear-gradient(135deg, #ffffff, #f3f3f3);
-  border-radius: 20px;
-  border: 3px solid #e0e0e0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 25px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,32 +56,33 @@ h1 {
 }
 
 .team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
-  font-size: 2.8rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #444;
+  margin: 0;
 }
 
 .score {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #007bff;
   margin: 20px 0;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Buttons Styling */
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; /* Equal spacing for buttons */
 }
 
 button {
-  background: linear-gradient(to bottom, #4caf50, #2e7d32); /* Green gradient */
+  background: linear-gradient(to bottom, #4caf50, #2e7d32); /* Green Gradient */
   color: white;
   border: none;
   padding: 15px 35px;
@@ -92,13 +91,13 @@ button {
   cursor: pointer;
   border-radius: 12px;
   transition: all 0.2s ease;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
   background: linear-gradient(to bottom, #45a049, #1b5e20);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
@@ -110,9 +109,37 @@ button:nth-child(2) {
     to bottom,
     #f44336,
     #b71c1c
-  ); /* Red gradient for decrease button */
+  ); /* Red Gradient for -1 */
 }
 
 button:nth-child(2):hover {
   background: linear-gradient(to bottom, #e53935, #8e0000);
+}
+
+/* Reset Button Styling */
+.reset-btn {
+  background: linear-gradient(
+    to bottom,
+    #ffa726,
+    #f57c00
+  ); /* Orange Gradient for Reset */
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reset-btn:hover {
+  background: linear-gradient(to bottom, #fb8c00, #ef6c00);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.reset-btn:active {
+  transform: translateY(2px);
 }
